@@ -1,0 +1,4 @@
+step 1:
+make cricket  //generate original .exe file
+step 2:
+./a.sh        //generate roms with ID

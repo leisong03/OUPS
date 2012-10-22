@@ -1,0 +1,144 @@
+#include <matrix.h>  
+#include <Mymath.h>  
+#include <LocationDef.h>  
+
+#include <ReceiverFilter.h>
+#include <stdio.h>
+//#include <string.h>
+
+//PositionData PositionEstimateTriangulation(double x[],double y[],double z[],double dist[],double lastz,int size,int TargetID);
+PositionData PositionEstimateTriangulation(const RefNode refNodes[], PSample &data,double lastz,int TargetID);
+PositionData EKF(const RefNode refNodes[], PSample &data,PositionData LsqPos);
+
+//get data from stdin
+bool getData(PSample &data,FILE *fp);
+int main (int argc,char *argv[])
+{
+    PositionData result;
+    int rx_num,i;
+    FILE *conf_fp;
+    double lastz=70;
+    double x[max_rx_num];
+    double y[max_rx_num];
+    double z[max_rx_num];
+    RefNode refNodes[max_rx_num];
+    PSample data;
+
+#define KF 1
+#define TRI 2
+#define BOTH 0
+    int outputType= BOTH;
+    if(argc>=2){
+        if(!strcmp(argv[1],"EKF")||!strcmp(argv[1],"ekf")){
+            outputType= KF;
+        }else{
+            outputType= TRI;
+        }
+    }
+
+    conf_fp=fopen("./rx_coord.conf","r");
+    if(!conf_fp){
+        cout<<"./rx_coord.conf in need"<<endl;
+        exit(0);
+    }
+    fscanf(conf_fp,"%d\n",&rx_num);
+    for(i=0;i<rx_num;i++){
+        int idx;
+        fscanf(conf_fp,"%d:",&idx);
+        fscanf(conf_fp,"%lf %lf %lf\n",&(x[idx]),&(y[idx]),&(z[idx]));
+        refNodes[idx].x=x[idx];
+        refNodes[idx].y=y[idx];
+        refNodes[idx].z=z[idx];
+    }
+    
+    while(1){
+        //int dist_num,j,ret;
+        //dist_num=0;
+        bool success = true;
+        //FILE *fp = fopen(STDIN);
+
+        //int getData(PSample &data);
+
+        {
+            int ret=0,dist_num=0;
+            ret = scanf("%d",&dist_num);
+            cout<<"dist_num"<<dist_num<<" "<<"ret "<<ret<<endl;
+            return 0;
+        }
+        success = getData(data,stdin);
+
+        //LowThreshhold = 50.0, HighThreshold = 1200.0
+        //OutlierRejection(50.0, 1200.0,refNodes,data);
+
+        if(success==false)
+            cout<<"error:Negative data"<<endl;
+        else{
+            //cout<<"====================cal coord=================="<<endl;
+            //result=PositionEstimateTriangulation(thisx,thisy,thisz,dist,lastz,data.Samplecount,1);
+            result = PositionEstimateTriangulation(refNodes,data,lastz,1);
+            if(outputType==BOTH||outputType==TRI){
+                if(outputType==BOTH)printf("LSQ:");
+                //printf("x %lf y %lf z %lf\n",result.x,result.y,result.z);
+                printf("%lf %lf %lf\n",result.x,result.y,result.z);
+            }
+
+            if(outputType==BOTH||outputType==KF){
+                data.TargetID=1;
+                data.TimeStamp=2;
+                //memset(&result,0,sizeof(result));
+                PositionData ekfresult;
+                ekfresult=EKF(refNodes,data,result);
+                if(outputType==BOTH)printf("EKF:");
+                //printf("x %lf y %lf z %lf\n",ekfresult.x,ekfresult.y,ekfresult.z);
+                printf("%lf %lf %lf\n",ekfresult.x,ekfresult.y,ekfresult.z);
+            }
+            fflush(stdout);
+        }
+    }
+}
+
+
+bool getData(PSample &data,FILE *fp)
+{
+    int ret;
+    int dist_num;
+
+    ret = scanf("%d",&dist_num);
+    cout<<"dist_num"<<dist_num<<"ret = "<<ret<<endl;
+    while(ret!=1){
+        int ch;
+        do{
+            ch = fgetc(fp);
+            //printf("%d\n",(int)ch);
+        }while(ch!=-1&&ch!='\n');
+
+        if(ch==-1){
+            ret = -1;
+            break;
+        }
+        ret = fscanf(fp,"%d ",&dist_num);
+        if(ret == -1)
+            break;
+    }
+    if(ret==-1)
+        return false;
+
+    memset(&data,0,sizeof(data));
+    data.SampleCount=dist_num;
+
+    int error_flag=0;
+    for(int j=0;j<data.SampleCount;j++){
+        int idx;
+        double t;
+        if(fscanf(fp,"%d:%lf",&idx,&t)!=-1){
+            if(t<0){
+                error_flag=1;
+                break;
+            }
+            data.ReceiverId[j]=idx;
+            data.Dist[j]=t;
+        }
+    }
+    return (error_flag? false:true);
+}
+

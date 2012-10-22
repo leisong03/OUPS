@@ -1,0 +1,155 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+BAD_STATE	newekf.h	/^const int BAD_STATE     = 200;$/;"	v
+CATCHERROR	newekf.h	57;"	d
+CATCHERROR	newekf.h	61;"	d
+Col	matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+ColNo	matrix.h	/^   size_t ColNo () const { return _m->Col; }$/;"	f	class:math::matrix
+ColSiz	matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+DELAY_THRESH	newekf.h	/^const double DELAY_THRESH = 1200;$/;"	v
+DIM	newekf.h	/^	int DIM;$/;"	m	class:NEWEKFfilter
+Dist	LocationDef.h	/^    double Dist[max_rx_num];$/;"	m	struct:__anon2
+FRIEND_FUN_TEMPLATE	matrix.h	164;"	d
+FRIEND_FUN_TEMPLATE	matrix.h	166;"	d
+G	newekf.h	/^	Matrix G;$/;"	m	class:NEWEKFfilter
+KALMAN_OK	newekf.h	/^const int KALMAN_OK = 100;$/;"	v
+MAT_TEMPLATE	matrix.h	201;"	d
+MAT_TEMPLATE	matrix.h	204;"	d
+MYMATH	Mymath.h	2;"	d
+Matrix	newekf.h	/^typedef matrix<double> Matrix;$/;"	t
+MinHeight	newekf.h	/^const int MinHeight = 50; \/\/EKFÌõ¼þÏÂ£¬×îÐ¡µÄ¸ß¶ÈÒªÇó£¬µÍÓÚÕâ¸öÏÞÖÆ½«Ê¹ÓÃLSQ$/;"	v
+NEWEKFfilter	newekf.h	/^   NEWEKFfilter(){};$/;"	f	class:NEWEKFfilter
+NEWEKFfilter	newekf.h	/^class NEWEKFfilter{$/;"	c
+P	newekf.h	/^	Matrix P;$/;"	m	class:NEWEKFfilter
+PSample	LocationDef.h	/^}PSample;$/;"	t	typeref:struct:__anon2
+Pest	newekf.h	/^	Matrix Pest;$/;"	m	class:NEWEKFfilter
+Phi	newekf.h	/^	Matrix Phi;$/;"	m	class:NEWEKFfilter
+PositionData	LocationDef.h	/^typedef struct PositionData{$/;"	s
+PositionData	LocationDef.h	/^}PositionData;$/;"	t	typeref:struct:PositionData
+Qk	newekf.h	/^	Matrix Qk;$/;"	m	class:NEWEKFfilter
+R	newekf.h	/^const double R = 80.2218;$/;"	v
+REJECT_SAMPLE	newekf.h	/^const int REJECT_SAMPLE = 101;$/;"	v
+REJLEN	newekf.h	/^const int REJLEN = 20;$/;"	v
+REPORT_ERROR	matrix.h	190;"	d
+RID	LocationDef.h	/^    int RID;$/;"	m	struct:__anon1
+ReceiverId	LocationDef.h	/^    int ReceiverId[max_rx_num];$/;"	m	struct:__anon2
+RefNode	LocationDef.h	/^}RefNode;$/;"	t	typeref:struct:__anon1
+Refcnt	matrix.h	/^	int Refcnt;$/;"	m	struct:math::matrix::base_mat
+Row	matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+RowNo	matrix.h	/^   size_t RowNo () const { return _m->Row; }$/;"	f	class:math::matrix
+RowSiz	matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+SQRT3	newekf.h	/^const double SQRT3 = sqrt(3.0);$/;"	v
+STARTUP	newekf.h	/^	bool STARTUP; \/\/ start state for EKF$/;"	m	class:NEWEKFfilter
+STD	newekf.h	44;"	d
+SUSLEN	newekf.h	/^const int SUSLEN = 20;$/;"	v
+SampleCount	LocationDef.h	/^    int SampleCount;$/;"	m	struct:__anon2
+T	matrix.h	/^     typedef MATRIX_TYPE T;$/;"	t	namespace:math
+T	matrix.h	/^     typedef double T;$/;"	t	namespace:math
+TRYBEGIN	newekf.h	56;"	d
+TRYBEGIN	newekf.h	60;"	d
+TargetID	LocationDef.h	/^    int TargetID;$/;"	m	struct:PositionData
+TargetID	LocationDef.h	/^    int TargetID;$/;"	m	struct:__anon2
+ThreeStateEKF	newekf.h	/^	bool ThreeStateEKF;$/;"	m	class:NEWEKFfilter
+TimeStamp	LocationDef.h	/^    long TimeStamp;$/;"	m	struct:__anon2
+UVAL	newekf.h	/^	double UVAL;$/;"	m	class:NEWEKFfilter
+Val	matrix.h	/^	T **Val;$/;"	m	struct:math::matrix::base_mat
+X	newekf.h	/^	Matrix X;$/;"	m	class:NEWEKFfilter
+Xest	newekf.h	/^	Matrix Xest;$/;"	m	class:NEWEKFfilter
+_LocationDef_H	LocationDef.h	3;"	d
+_MSC_EXTENSIONS	matrix.h	154;"	d
+_NO_EXCEPTION	matrix.h	108;"	d
+_NO_EXCEPTION	matrix.h	119;"	d
+_NO_EXCEPTION	matrix.h	124;"	d
+_NO_NAMESPACE	matrix.h	120;"	d
+_NO_NAMESPACE	matrix.h	170;"	d
+_NO_THROW	matrix.h	/^   T Cond () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   T Norm () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsDiagonal () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsLowerTriangular () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsNull () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsScalar () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsSingular () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsSkewSymmetric () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsSymmetric () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsUnit () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   bool IsUpperTriangular () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   matrixT operator - () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   matrixT& operator *= (const T& c) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   matrixT& operator = (const matrixT& m) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   matrixT& operator \/= (const T& c) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   void Null () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   void Null (const size_t& row, const size_t& col) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   void SetSize (size_t row, size_t col) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   void Unit () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	/^   void Unit (const size_t& row) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	matrix.h	128;"	d
+_NO_THROW	matrix.h	144;"	d
+_NO_THROW	matrix.h	313;"	d
+_NO_THROW	matrix.h	315;"	d
+_ReceiverFilter_h	ReceiverFilter.h	2;"	d
+_THROW_MATRIX_ERROR	matrix.h	/^   T  operator () (size_t row, size_t col) const _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   T Cofact (size_t row, size_t col) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   T Det () const _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   T& operator () (size_t row, size_t col) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT Adj () _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT Inv () _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT Solve (const matrixT& v) const _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT& operator *= (const matrixT& m) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT& operator += (const matrixT& m) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT& operator -= (const matrixT& m) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	/^   matrixT& operator ^= (const size_t& pow) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	matrix.h	129;"	d
+_THROW_MATRIX_ERROR	matrix.h	145;"	d
+_THROW_MATRIX_ERROR	matrix.h	314;"	d
+_THROW_MATRIX_ERROR	matrix.h	316;"	d
+__STD_MATRIX_H	matrix.h	82;"	d
+_m	matrix.h	/^    base_mat *_m;$/;"	m	class:math::matrix
+abs	matrix.h	/^inline double abs (double v) { return fabs( v); } $/;"	f
+abs	matrix.h	/^inline float abs (float v) { return (float)fabs( v); } $/;"	f
+abs	matrix.h	/^inline long double abs (long double v) { return fabsl( v); }$/;"	f
+base_mat	matrix.h	/^	base_mat (size_t row, size_t col, T** v)$/;"	f	struct:math::matrix::base_mat
+base_mat	matrix.h	/^    struct base_mat$/;"	s	class:math::matrix
+belief	LocationDef.h	/^    float  belief;$/;"	m	struct:PositionData
+bool	matrix.h	/^typedef int bool;$/;"	t
+clone	matrix.h	/^matrixT::clone ()$/;"	f	class:math::matrixT
+fCov	newekf.h	/^	double fCov;$/;"	m	class:NEWEKFfilter
+false	matrix.h	111;"	d
+lastUpdate	newekf.h	/^	long lastUpdate;$/;"	m	class:NEWEKFfilter
+math	matrix.h	/^namespace math {$/;"	n
+matrix	matrix.h	/^class matrix$/;"	c	namespace:math
+matrix	matrix.h	/^matrixT::matrix (const matrixT& m)$/;"	f	class:math::matrixT
+matrix	matrix.h	/^matrixT::matrix (size_t row, size_t col)$/;"	f	class:math::matrixT
+matrixT	matrix.h	202;"	d
+matrixT	matrix.h	205;"	d
+matrix_error	matrix.h	/^	matrix_error (const string& what_arg) : logic_error( what_arg) {}$/;"	f	class:math::matrix_error
+matrix_error	matrix.h	/^class matrix_error : public logic_error$/;"	c	namespace:math
+max	matrix.h	149;"	d
+max_rx_num	LocationDef.h	5;"	d
+max_tag_num	LocationDef.h	6;"	d
+min	matrix.h	150;"	d
+operator <<	matrix.h	/^operator << (ostream& ostrm, const matrixT& m)$/;"	f	namespace:math
+operator >>	matrix.h	/^operator >> (istream& istrm, matrixT& m)$/;"	f	namespace:math
+pivot	matrix.h	/^matrixT::pivot (size_t row)$/;"	f	class:math::matrixT
+qScale	newekf.h	/^	double qScale;$/;"	m	class:NEWEKFfilter
+realloc	matrix.h	/^matrixT::realloc (size_t row, size_t col)$/;"	f	class:math::matrixT
+rejectBuf	newekf.h	/^    int rejectBuf[REJLEN];$/;"	m	class:NEWEKFfilter
+rejectRatio	newekf.h	/^const double rejectRatio = 0.2;$/;"	v
+rejectThresh	newekf.h	/^const double rejectThresh = 100; \/\/1000;$/;"	v
+runCounter	newekf.h	/^	int runCounter;$/;"	m	class:NEWEKFfilter
+std	matrix.h	/^namespace std { }$/;"	n
+suspectBuf	newekf.h	/^	int suspectBuf[SUSLEN];$/;"	m	class:NEWEKFfilter
+suspectRatio	newekf.h	/^	double suspectRatio;$/;"	m	class:NEWEKFfilter
+suspectThresh	newekf.h	/^const double suspectThresh = 0xffffffff;$/;"	v
+true	matrix.h	114;"	d
+x	LocationDef.h	/^    double x;$/;"	m	struct:PositionData
+x	LocationDef.h	/^    double x;$/;"	m	struct:__anon1
+y	LocationDef.h	/^    double y;$/;"	m	struct:PositionData
+y	LocationDef.h	/^    double y;$/;"	m	struct:__anon1
+z	LocationDef.h	/^    double z;$/;"	m	struct:PositionData
+z	LocationDef.h	/^    double z;$/;"	m	struct:__anon1
+~base_mat	matrix.h	/^	~base_mat ()$/;"	f	struct:math::matrix::base_mat
+~matrix	matrix.h	/^matrixT::~matrix ()$/;"	f	class:math::matrixT

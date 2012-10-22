@@ -1,0 +1,279 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+BAD_STATE	include/newekf.h	/^const int BAD_STATE     = 200;$/;"	v
+BOTH	cal_coord.cpp	42;"	d	file:
+BottomEdge	NodePosition.h	/^    float BottomEdge;$/;"	m	struct:ShelfShape
+BottomEdge	nd_pos/NodePostion.h	/^    float BottomEdge;$/;"	m	struct:ShelfShape
+CATCHERROR	LSQ.cpp	20;"	d	file:
+CATCHERROR	LSQ.cpp	24;"	d	file:
+CATCHERROR	include/newekf.h	58;"	d
+CATCHERROR	include/newekf.h	62;"	d
+CC	Makefile	/^CC=g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS='-I.\/include'$/;"	m
+ClearBuff	Mymath.cpp	/^void ClearBuff(int *buf, int length)$/;"	f
+Col	include/matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+ColNo	include/matrix.h	/^   size_t ColNo () const { return _m->Col; }$/;"	f	class:math::matrix
+ColSiz	include/matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+CopyMatrix	Mymath.cpp	/^void CopyMatrix(double **dest, double **src, int row, int col)$/;"	f
+CopyVector	Mymath.cpp	/^void CopyVector(double *dest, double *src, int length)$/;"	f
+DELAY_THRESH	include/newekf.h	/^const double DELAY_THRESH = 2000;$/;"	v
+DELTA_DIST_FOR_STABLE	NodePosition.cpp	15;"	d	file:
+DIM	include/newekf.h	/^	int DIM;$/;"	m	class:NEWEKFfilter
+Diag2Vec	Mymath.cpp	/^void Diag2Vec(double **m, double *v, int dim)$/;"	f
+Dir_step	cal_coord.cpp	321;"	d	file:
+Dist	include/LocationDef.h	/^    double Dist[max_rx_num];$/;"	m	struct:__anon2
+Dist_step	cal_coord.cpp	319;"	d	file:
+EKF	EKF.cpp	/^PositionData EKF(const RefNode refNodes[], PSample &data,PositionData LsqPos)$/;"	f
+FRIEND_FUN_TEMPLATE	include/matrix.h	164;"	d
+FRIEND_FUN_TEMPLATE	include/matrix.h	166;"	d
+G	include/newekf.h	/^	Matrix G;$/;"	m	class:NEWEKFfilter
+INVALIDVALUE	ReceiverFilter.cpp	37;"	d	file:
+INVALIDVALUE	include/LocationDef.h	8;"	d
+IdentityMat	Mymath.cpp	/^void IdentityMat(double **m, int dim)$/;"	f
+InitAllMat	newekf.cpp	/^void NEWEKFfilter::InitAllMat()$/;"	f	class:NEWEKFfilter
+InitMat	Mymath.cpp	/^void InitMat(double **src, int dim, double val)$/;"	f
+InitVec	Mymath.cpp	/^void InitVec(double *src, int length, double val)$/;"	f
+InsertBuff	Mymath.cpp	/^void InsertBuff(int *buf, int val, int length)$/;"	f
+KALMAN_OK	include/newekf.h	/^const int KALMAN_OK = 100;$/;"	v
+KF	cal_coord.cpp	40;"	d	file:
+Loops_of_data	NodePosition.cpp	14;"	d	file:
+Loops_of_data	nd_pos/NodePosition.cpp	14;"	d	file:
+MAT_TEMPLATE	include/matrix.h	201;"	d
+MAT_TEMPLATE	include/matrix.h	204;"	d
+MYMATH	include/Mymath.h	2;"	d
+MatMulVec	Mymath.cpp	/^void MatMulVec(double *dest, double **src1, double *src2, int dim)$/;"	f
+MatTranspose	Mymath.cpp	/^void MatTranspose(double **dest, double **src, int dim)$/;"	f
+Matrix	LSQ.cpp	/^typedef matrix<double> Matrix;$/;"	t	file:
+Matrix	include/newekf.h	/^typedef matrix<double> Matrix;$/;"	t
+Max_Dir	cal_coord.cpp	320;"	d	file:
+Max_Dist	cal_coord.cpp	318;"	d	file:
+MinHeight	include/newekf.h	/^const int MinHeight = 50; \/\/EKFÌõ¼þÏÂ£¬×îÐ¡µÄ¸ß¶ÈÒªÇó£¬µÍÓÚÕâ¸öÏÞÖÆ½«Ê¹ÓÃLSQ$/;"	v
+NEWEKFfilter	include/newekf.h	/^   NEWEKFfilter(){};$/;"	f	class:NEWEKFfilter
+NEWEKFfilter	include/newekf.h	/^class NEWEKFfilter{$/;"	c
+NEWEKFfilter	newekf.cpp	/^NEWEKFfilter::NEWEKFfilter(bool threeStates)$/;"	f	class:NEWEKFfilter
+NdDist	NodePosition.cpp	/^    float NdDist[Loops_of_data][max_rx_num];$/;"	m	struct:Tag2NdsDist	file:
+NdDist	nd_pos/NodePosition.cpp	/^    float NdDist[Loops_of_data][max_rx_num];\/\/NdDist[i][j] refers the distance from TagId to Node j at the order of i$/;"	m	struct:TagNdDist	file:
+NodePostion_h	NodePosition.h	2;"	d
+NodePostion_h	nd_pos/NodePostion.h	2;"	d
+OutlierRejection	ReceiverFilter.cpp	/^void OutlierRejection(float LowT, float HighT,const RefNode refNodes[],PSample &data)$/;"	f
+P	include/newekf.h	/^	Matrix P;$/;"	m	class:NEWEKFfilter
+PK_INTERVAL	include/LocationDef.h	9;"	d
+PSample	include/LocationDef.h	/^}PSample;$/;"	t	typeref:struct:__anon2
+Pest	include/newekf.h	/^	Matrix Pest;$/;"	m	class:NEWEKFfilter
+Phi	include/newekf.h	/^	Matrix Phi;$/;"	m	class:NEWEKFfilter
+PlusEqual	Mymath.cpp	/^void PlusEqual(double *a, double *b, double p, int length)$/;"	f
+Pos3D	NodePosition.h	/^typedef struct Pos3D{$/;"	s
+Pos3D	NodePosition.h	/^}Pos3D;$/;"	t	typeref:struct:Pos3D
+Pos3D	nd_pos/NodePostion.h	/^typedef struct Pos3D{$/;"	s
+Pos3D	nd_pos/NodePostion.h	/^}Pos3D;$/;"	t	typeref:struct:Pos3D
+PosInfoQuality	cal_coord.cpp	/^int PosInfoQuality(const RefNode refNodes[], PSample data,PositionData Pos)$/;"	f
+PosQualityCalc	NodePosition.cpp	/^static float PosQualityCalc(PSample data,PositionData pos_res,RefNode refPts[]){$/;"	f	file:
+PositionData	include/LocationDef.h	/^typedef struct PositionData{$/;"	s
+PositionData	include/LocationDef.h	/^}PositionData;$/;"	t	typeref:struct:PositionData
+PositionEstimateTriangulation	LSQ.cpp	/^PositionData PositionEstimateTriangulation(const RefNode refNodes[], PSample &data,$/;"	f
+Qk	include/newekf.h	/^	Matrix Qk;$/;"	m	class:NEWEKFfilter
+R	include/newekf.h	/^const double R = 80.2218;$/;"	v
+REJECT_SAMPLE	include/newekf.h	/^const int REJECT_SAMPLE = 101;$/;"	v
+REJLEN	include/newekf.h	/^const int REJLEN = 20;$/;"	v
+REPORT_ERROR	include/matrix.h	190;"	d
+RID	include/LocationDef.h	/^    int RID;$/;"	m	struct:__anon1
+Ratio	Mymath.cpp	/^double Ratio( int *buf, int length)$/;"	f
+ReceiverId	include/LocationDef.h	/^    int ReceiverId[max_rx_num];$/;"	m	struct:__anon2
+RefNode	include/LocationDef.h	/^}RefNode;$/;"	t	typeref:struct:__anon1
+RefPt	NodePosition.cpp	/^    Pos3D RefPt[4];$/;"	m	struct:Shelf_Conf	file:
+RefPt	nd_pos/NodePosition.cpp	/^    Pos3D RefPt[3];$/;"	m	struct:Shelf_Conf	file:
+Refcnt	include/matrix.h	/^	int Refcnt;$/;"	m	struct:math::matrix::base_mat
+Row	include/matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+RowNo	include/matrix.h	/^   size_t RowNo () const { return _m->Row; }$/;"	f	class:math::matrix
+RowSiz	include/matrix.h	/^	size_t Row, Col, RowSiz, ColSiz;$/;"	m	struct:math::matrix::base_mat
+SHORTEST_LEN_OF_EDGE	NodePosition.cpp	13;"	d	file:
+SHORTEST_LEN_OF_EDGE	nd_pos/NodePosition.cpp	13;"	d	file:
+SQRT3	include/newekf.h	/^const double SQRT3 = sqrt(3.0);$/;"	v
+STARTUP	include/newekf.h	/^	bool STARTUP; \/\/ start state for EKF$/;"	m	class:NEWEKFfilter
+STD	LSQ.cpp	7;"	d	file:
+STD	include/newekf.h	45;"	d
+SUSLEN	include/newekf.h	/^const int SUSLEN = 20;$/;"	v
+SampleCount	include/LocationDef.h	/^    int SampleCount;$/;"	m	struct:__anon2
+ShelfShape	NodePosition.h	/^typedef struct ShelfShape{$/;"	s
+ShelfShape	NodePosition.h	/^}ShelfShape;$/;"	t	typeref:struct:ShelfShape
+ShelfShape	nd_pos/NodePostion.h	/^typedef struct ShelfShape{$/;"	s
+ShelfShape	nd_pos/NodePostion.h	/^}ShelfShape;$/;"	t	typeref:struct:ShelfShape
+Shelf_Conf	NodePosition.cpp	/^typedef struct Shelf_Conf{$/;"	s	file:
+Shelf_Conf	NodePosition.cpp	/^}Shelf_Conf;$/;"	t	typeref:struct:Shelf_Conf	file:
+Shelf_Conf	nd_pos/NodePosition.cpp	/^typedef struct Shelf_Conf{$/;"	s	file:
+Shelf_Conf	nd_pos/NodePosition.cpp	/^}Shelf_Conf;$/;"	t	typeref:struct:Shelf_Conf	file:
+SortSamples	ReceiverFilter.cpp	/^static void SortSamples(PSample &data)$/;"	f	file:
+T	include/matrix.h	/^     typedef MATRIX_TYPE T;$/;"	t	namespace:math
+T	include/matrix.h	/^     typedef double T;$/;"	t	namespace:math
+TRI	cal_coord.cpp	41;"	d	file:
+TRYBEGIN	LSQ.cpp	19;"	d	file:
+TRYBEGIN	LSQ.cpp	23;"	d	file:
+TRYBEGIN	include/newekf.h	57;"	d
+TRYBEGIN	include/newekf.h	61;"	d
+Tag2NdsDist	NodePosition.cpp	/^typedef struct Tag2NdsDist{$/;"	s	file:
+Tag2NdsDist	NodePosition.cpp	/^}Tag2NdsDist;$/;"	t	typeref:struct:Tag2NdsDist	file:
+TagId	NodePosition.cpp	/^    int TagId;\/\/following distance is about this tagid$/;"	m	struct:Tag2NdsDist	file:
+TagId	nd_pos/NodePosition.cpp	/^    int TagId;\/\/following distance is about this tagid$/;"	m	struct:TagNdDist	file:
+TagNdDist	nd_pos/NodePosition.cpp	/^typedef struct TagNdDist{$/;"	s	file:
+TagNdDist	nd_pos/NodePosition.cpp	/^}TagNdDist;$/;"	t	typeref:struct:TagNdDist	file:
+TagNodeDist	NodePosition.cpp	/^static Tag2NdsDist TagNodeDist[max_rx_num];$/;"	v	file:
+TagNodeDist	nd_pos/NodePosition.cpp	/^static TagNdDist TagNodeDist[5] = {{0},{0},{0},{0},{0}};$/;"	v	file:
+TargetID	include/LocationDef.h	/^    int TargetID;$/;"	m	struct:PositionData
+TargetID	include/LocationDef.h	/^    int TargetID;$/;"	m	struct:__anon2
+ThreeStateEKF	include/newekf.h	/^	bool ThreeStateEKF;$/;"	m	class:NEWEKFfilter
+TimeStamp	include/LocationDef.h	/^    long TimeStamp;$/;"	m	struct:__anon2
+UVAL	include/newekf.h	/^	double UVAL;$/;"	m	class:NEWEKFfilter
+Val	include/matrix.h	/^	T **Val;$/;"	m	struct:math::matrix::base_mat
+Vec2Diag	Mymath.cpp	/^void Vec2Diag(double **m, double *v, int dim)$/;"	f
+WaistEdge	NodePosition.h	/^    float WaistEdge;$/;"	m	struct:ShelfShape
+WaistEdge	nd_pos/NodePostion.h	/^    float WaistEdge;$/;"	m	struct:ShelfShape
+X	include/newekf.h	/^	Matrix X;$/;"	m	class:NEWEKFfilter
+Xest	include/newekf.h	/^	Matrix Xest;$/;"	m	class:NEWEKFfilter
+_LocationDef_H	include/LocationDef.h	3;"	d
+_MSC_EXTENSIONS	include/matrix.h	154;"	d
+_NO_EXCEPTION	include/matrix.h	108;"	d
+_NO_EXCEPTION	include/matrix.h	119;"	d
+_NO_EXCEPTION	include/matrix.h	124;"	d
+_NO_NAMESPACE	include/matrix.h	120;"	d
+_NO_NAMESPACE	include/matrix.h	170;"	d
+_NO_THROW	include/matrix.h	/^   T Cond () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   T Norm () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsDiagonal () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsLowerTriangular () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsNull () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsScalar () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsSingular () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsSkewSymmetric () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsSymmetric () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsUnit () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   bool IsUpperTriangular () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   matrixT operator - () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   matrixT& operator *= (const T& c) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   matrixT& operator = (const matrixT& m) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   matrixT& operator \/= (const T& c) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   void Null () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   void Null (const size_t& row, const size_t& col) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   void SetSize (size_t row, size_t col) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   void Unit () _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	/^   void Unit (const size_t& row) _NO_THROW;$/;"	m	class:math::matrix
+_NO_THROW	include/matrix.h	128;"	d
+_NO_THROW	include/matrix.h	144;"	d
+_NO_THROW	include/matrix.h	313;"	d
+_NO_THROW	include/matrix.h	315;"	d
+_ReceiverFilter_h	ReceiverFilter.h	2;"	d
+_ReceiverFilter_h	include/ReceiverFilter.h	2;"	d
+_THROW_MATRIX_ERROR	include/matrix.h	/^   T  operator () (size_t row, size_t col) const _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   T Cofact (size_t row, size_t col) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   T Det () const _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   T& operator () (size_t row, size_t col) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT Adj () _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT Inv () _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT Solve (const matrixT& v) const _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT& operator *= (const matrixT& m) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT& operator += (const matrixT& m) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT& operator -= (const matrixT& m) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	/^   matrixT& operator ^= (const size_t& pow) _THROW_MATRIX_ERROR;$/;"	m	class:math::matrix
+_THROW_MATRIX_ERROR	include/matrix.h	129;"	d
+_THROW_MATRIX_ERROR	include/matrix.h	145;"	d
+_THROW_MATRIX_ERROR	include/matrix.h	314;"	d
+_THROW_MATRIX_ERROR	include/matrix.h	316;"	d
+__STD_MATRIX_H	include/matrix.h	82;"	d
+_m	include/matrix.h	/^    base_mat *_m;$/;"	m	class:math::matrix
+abs	include/matrix.h	/^inline double abs (double v) { return fabs( v); } $/;"	f
+abs	include/matrix.h	/^inline float abs (float v) { return (float)fabs( v); } $/;"	f
+abs	include/matrix.h	/^inline long double abs (long double v) { return fabsl( v); }$/;"	f
+base_mat	include/matrix.h	/^	base_mat (size_t row, size_t col, T** v)$/;"	f	struct:math::matrix::base_mat
+base_mat	include/matrix.h	/^    struct base_mat$/;"	s	class:math::matrix
+belief	include/LocationDef.h	/^    float  belief;$/;"	m	struct:PositionData
+belief	include/LocationDef.h	/^    float  belief;\/\/the lit,the more confidence$/;"	m	struct:__anon1
+bool	include/matrix.h	/^typedef int bool;$/;"	t
+calc_offset	newekf.cpp	/^int calc_offset(const RefNode refNodes[],PSample &saved_data,PositionData result)$/;"	f
+check_x_y_z	cal_coord.cpp	/^bool check_x_y_z(PSample &data,FILE *fp,RefNode refNodes[],int rx_num)$/;"	f
+clone	include/matrix.h	/^matrixT::clone ()$/;"	f	class:math::matrixT
+covarPredictionAndCorrection	newekf.cpp	/^int NEWEKFfilter::covarPredictionAndCorrection(const RefNode refNodes[], long dT, PSample &data)$/;"	f	class:NEWEKFfilter
+covarPredictionAndCorrection_new	newekf.cpp	/^int NEWEKFfilter::covarPredictionAndCorrection_new(const RefNode refNodes[], long dT, PSample &data)$/;"	f	class:NEWEKFfilter
+data_input	NodePosition.cpp	/^static bool data_input(PSample &RawData,bool conf_data_from_stdin)$/;"	f	file:
+diffsqr	Mymath.cpp	/^double diffsqr(double a, double b)$/;"	f
+dis_dir_hist	cal_coord.cpp	/^static int dis_dir_hist[Max_Dist\/Dist_step+1][Max_Dir\/Dir_step+1];$/;"	v	file:
+ekfprocess	newekf.cpp	/^PositionData NEWEKFfilter::ekfprocess(const RefNode refNodes[], PSample &data )$/;"	f	class:NEWEKFfilter
+fCov	include/newekf.h	/^	double fCov;$/;"	m	class:NEWEKFfilter
+false	include/matrix.h	111;"	d
+getData	cal_coord.cpp	/^bool getData(PSample &data,FILE *fp)$/;"	f
+get_H_K_X	newekf.cpp	/^int NEWEKFfilter::get_H_K_X(const RefNode refNodes[],PSample &data,Matrix &H,Matrix &K,Matrix &X)$/;"	f	class:NEWEKFfilter
+get_pos_of_point	NodePosition.cpp	/^int get_pos_of_point(PSample *pSmpDataArr,int len,RefNode refTags[max_rx_num],RefNode &CurPt)$/;"	f
+getfCov	newekf.cpp	/^double NEWEKFfilter::getfCov()$/;"	f	class:NEWEKFfilter
+inited	cal_coord.cpp	/^static int inited = 0;$/;"	v	file:
+lastUpdate	include/newekf.h	/^	long lastUpdate;$/;"	m	class:NEWEKFfilter
+loops	NodePosition.cpp	/^static int loops = 0;$/;"	v	file:
+main	cal_coord.cpp	/^int main (int argc,char *argv[])$/;"	f
+math	include/matrix.h	/^namespace math {$/;"	n
+matrix	include/matrix.h	/^class matrix$/;"	c	namespace:math
+matrix	include/matrix.h	/^matrixT::matrix (const matrixT& m)$/;"	f	class:math::matrixT
+matrix	include/matrix.h	/^matrixT::matrix (size_t row, size_t col)$/;"	f	class:math::matrixT
+matrixT	include/matrix.h	202;"	d
+matrixT	include/matrix.h	205;"	d
+matrix_error	include/matrix.h	/^	matrix_error (const string& what_arg) : logic_error( what_arg) {}$/;"	f	class:math::matrix_error
+matrix_error	include/matrix.h	/^class matrix_error : public logic_error$/;"	c	namespace:math
+max	include/matrix.h	149;"	d
+max_rx_num	include/LocationDef.h	5;"	d
+max_tag_num	include/LocationDef.h	6;"	d
+min	include/matrix.h	150;"	d
+newU	Mymath.cpp	/^void newU(double **src, int dim, double val)$/;"	f
+nodes_position_calc	NodePosition.cpp	/^int nodes_position_calc(RefNode *pRfNds,int max_nd_num,bool conf_data_from_stdin)$/;"	f
+obj	Makefile	/^obj=cal_coord.o Mymath.o LSQ.o EKF.o newekf.o ReceiverFilter.o NodePosition.o$/;"	m
+operator <<	include/matrix.h	/^operator << (ostream& ostrm, const matrixT& m)$/;"	f	namespace:math
+operator >>	include/matrix.h	/^operator >> (istream& istrm, matrixT& m)$/;"	f	namespace:math
+output2file	cal_coord.cpp	/^static void output2file(void)$/;"	f	file:
+pivot	include/matrix.h	/^matrixT::pivot (size_t row)$/;"	f	class:math::matrixT
+qScale	include/newekf.h	/^	double qScale;$/;"	m	class:NEWEKFfilter
+real_loops	NodePosition.cpp	/^    int real_loops;\/\/how many times of data is stored in the following array$/;"	m	struct:Tag2NdsDist	file:
+real_loops	nd_pos/NodePosition.cpp	/^    int real_loops;\/\/how many times of data is stored in the following array$/;"	m	struct:TagNdDist	file:
+realloc	include/matrix.h	/^matrixT::realloc (size_t row, size_t col)$/;"	f	class:math::matrixT
+rejectBuf	include/newekf.h	/^    int rejectBuf[REJLEN];$/;"	m	class:NEWEKFfilter
+rejectRatio	include/newekf.h	/^const double rejectRatio = 0.2;$/;"	v
+rejectThresh	include/newekf.h	/^const double rejectThresh = 1000; \/\/1000;$/;"	v
+resetEKF	newekf.cpp	/^void NEWEKFfilter::resetEKF(PositionData pos)$/;"	f	class:NEWEKFfilter
+runCounter	include/newekf.h	/^	int runCounter;$/;"	m	class:NEWEKFfilter
+setDiagMatrix	Mymath.cpp	/^void setDiagMatrix(double **m, int i, int j, int ct, double v)$/;"	f
+setDiagMatrix1	newekf.cpp	/^void NEWEKFfilter::setDiagMatrix1(Matrix &m, int i, int j, int ct, double v)$/;"	f	class:NEWEKFfilter
+shape	NodePosition.cpp	/^    ShelfShape shape;$/;"	m	struct:Shelf_Conf	file:
+shape	nd_pos/NodePosition.cpp	/^    ShelfShape shape;$/;"	m	struct:Shelf_Conf	file:
+shelf_conf	NodePosition.cpp	/^static Shelf_Conf shelf_conf = {{0.0,0.0},};$/;"	v	file:
+shelf_conf	nd_pos/NodePosition.cpp	/^static Shelf_Conf shelf_conf = {{0.0,0.0},};$/;"	v	file:
+shelf_shape_config	NodePosition.cpp	/^int shelf_shape_config(ShelfShape shape)$/;"	f
+shelf_shape_config	nd_pos/NodePosition.cpp	/^int shelf_shape_config(ShelfShape shape)$/;"	f
+sigio_handler	cal_coord.cpp	/^static void sigio_handler(int signo) {$/;"	f	file:
+slice_id	include/LocationDef.h	/^    char slice_id[14];$/;"	m	struct:__anon2
+solver	EKF.cpp	/^static class NEWEKFfilter* solver[max_tag_num]={NULL,NULL,NULL,NULL,NULL};$/;"	v	typeref:class:NEWEKFfilter	file:
+sqr	Mymath.cpp	/^double sqr(double a)$/;"	f
+statePrediction	newekf.cpp	/^void NEWEKFfilter::statePrediction(long dT)$/;"	f	class:NEWEKFfilter
+std	include/matrix.h	/^namespace std { }$/;"	n
+stopEKF	EKF.cpp	/^void stopEKF(int tagid){$/;"	f
+suspectBuf	include/newekf.h	/^	int suspectBuf[SUSLEN];$/;"	m	class:NEWEKFfilter
+suspectRatio	include/newekf.h	/^	double suspectRatio;$/;"	m	class:NEWEKFfilter
+suspectThresh	include/newekf.h	/^const double suspectThresh = 0xffffffff;$/;"	v
+tag1_fp	NodePosition.cpp	/^static FILE *tag1_fp=NULL,*tag2_fp=NULL,*tag3_fp=NULL,*tag4_fp=NULL;$/;"	v	file:
+tag2_fp	NodePosition.cpp	/^static FILE *tag1_fp=NULL,*tag2_fp=NULL,*tag3_fp=NULL,*tag4_fp=NULL;$/;"	v	file:
+tag3_fp	NodePosition.cpp	/^static FILE *tag1_fp=NULL,*tag2_fp=NULL,*tag3_fp=NULL,*tag4_fp=NULL;$/;"	v	file:
+tag4_fp	NodePosition.cpp	/^static FILE *tag1_fp=NULL,*tag2_fp=NULL,*tag3_fp=NULL,*tag4_fp=NULL;$/;"	v	file:
+true	include/matrix.h	114;"	d
+updateG	newekf.cpp	/^void NEWEKFfilter::updateG(long dT)$/;"	f	class:NEWEKFfilter
+x	NodePosition.h	/^    float x;$/;"	m	struct:Pos3D
+x	include/LocationDef.h	/^    double x;$/;"	m	struct:PositionData
+x	include/LocationDef.h	/^    double x;$/;"	m	struct:__anon1
+x	nd_pos/NodePostion.h	/^    float x;$/;"	m	struct:Pos3D
+y	NodePosition.h	/^    float y;$/;"	m	struct:Pos3D
+y	include/LocationDef.h	/^    double y;$/;"	m	struct:PositionData
+y	include/LocationDef.h	/^    double y;$/;"	m	struct:__anon1
+y	nd_pos/NodePostion.h	/^    float y;$/;"	m	struct:Pos3D
+z	NodePosition.h	/^    float z;$/;"	m	struct:Pos3D
+z	include/LocationDef.h	/^    double z;$/;"	m	struct:PositionData
+z	include/LocationDef.h	/^    double z;$/;"	m	struct:__anon1
+z	nd_pos/NodePostion.h	/^    float z;$/;"	m	struct:Pos3D
+~NEWEKFfilter	newekf.cpp	/^NEWEKFfilter::~NEWEKFfilter()$/;"	f	class:NEWEKFfilter
+~base_mat	include/matrix.h	/^	~base_mat ()$/;"	f	struct:math::matrix::base_mat
+~matrix	include/matrix.h	/^matrixT::~matrix ()$/;"	f	class:math::matrixT
